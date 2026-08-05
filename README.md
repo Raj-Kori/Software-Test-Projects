@@ -29,4 +29,5 @@ Welcome to my Software Testing portfolio repository! This repository demonstrate
 ---
 
 📬 *Feel free to review the test suites and connect with me for Quality Assurance and Software Testing opportunities!*
-📬 **Connect with me:** [LinkedIn Profile](https://www.linkedin.com/in/er-rajkori/) | [Email Me](mailto:rajrkori02@gmail.com)
+
+📬 **Connect with me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/er-rajkori/) | [Email Me](mailto:rajrkori02@gmail.com)
