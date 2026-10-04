@@ -1,0 +1,1 @@
+package pages; import org.openqa.selenium.*; public class YouTubePage {private final WebDriver d; public YouTubePage(WebDriver d){this.d=d;} public void search(String q){WebElement e=d.findElement(By.name("search_query"));e.sendKeys(q);e.submit();} public boolean resultsLoaded(){return d.findElements(By.cssSelector("ytd-video-renderer")).size()>0;}}
