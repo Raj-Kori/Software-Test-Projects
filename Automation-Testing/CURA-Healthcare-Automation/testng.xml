@@ -1,0 +1,1 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd"><suite name="CURA Automation"><test name="CURA Tests"><classes><class name="tests.CuraAppointmentTest"/></classes></test></suite>
