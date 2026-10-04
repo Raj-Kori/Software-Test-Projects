@@ -1,33 +1,51 @@
 # Software Testing & Quality Assurance Portfolio
 
-Welcome to my Software Testing portfolio repository! This repository demonstrates my expertise in **Manual Testing**, **Test Artifact Generation**, **STLC/SDLC Methodologies**, and **Defect Lifecycle Management**. It will also be updated with my upcoming **Automation Testing** projects.
+Welcome to my Software Testing portfolio. This repository demonstrates **Manual Testing, UI Automation, API Testing, Test Design, Defect Management, and QA documentation** using practical web applications.
 
----
+## 🛠️ Skills & Technologies
 
-## 🛠️ Skills & Testing Methodologies
-* **Testing Types:** Functional, Non-Functional, Regression, Integration, Sanity, Boundary Value Analysis (BVA), Equivalence Partitioning (EP), Usability Testing.
-* **Documentation:** Test Scenarios, Test Cases, Requirement Traceability Matrix (RTM), Bug/Defect Reports, Execution Reports.
-* **Tools & Technologies:** JIRA, Excel, Git, GitHub, Postman (API Testing - *In Progress*), Selenium/Cypress (*Upcoming*).
+- **Manual Testing:** Functional, Regression, Integration, Smoke/Sanity, UI/Usability, BVA, Equivalence Partitioning, Decision Tables, State Transition
+- **Test Artifacts:** Test Scenarios, Test Cases, RTM, Execution Reports, Defect Reports
+- **Automation:** Java, Selenium WebDriver, TestNG, Maven, Page Object Model
+- **API Testing:** Postman / REST API testing
+- **Tools:** JIRA, Excel, Git, GitHub
 
----
+## 📁 Portfolio Structure
 
-## 📁 Projects Overview
+### Manual Testing
+| Project | Application | Focus |
+|---|---|---|
+| CURA Healthcare | Healthcare appointment portal | Functional & regression |
+| GreenKart | E-commerce grocery store | E2E, UI & boundary testing |
+| Travel The World | BlazeDemo flight booking | Exploratory, usability & functional |
+| YouTube | Video platform | Scenario-based functional coverage |
 
-| Project Name | Scope & Focus | Testing Type | Folder Link |
-| :--- | :--- | :--- | :--- |
-| **CURA Health Care Services** | Patient Appointment Booking, Healthcare Workflows | Functional, Regression | [View Project](./Manual-Testing/CURA%20Health%20Care%20Services%20-Manual%20Testing) |
-| **GreenKart** | E-Commerce Search, Cart Management & Checkout | E2E, UI, Boundary Testing | [View Project](./Manual-Testing/GreenKart%20-%20Manual%20Testing%20Project) |
-| **Travel The World** | Flight/Hotel Booking Engine, User Experience | Practical Exploratory, Usability | [View Project](./Manual-Testing/Travel%20The%20World) |
-| **YouTube** | Video Playback, Search Filters & User Interactions | Scenario-based, Execution Suite | [View Project](./Manual-Testing/Youtube%20-%20Manual%20Test%20Project) |
+### UI Automation
+Each manual project has a corresponding Java/Selenium automation project:
 
----
+- [CURA Healthcare Automation](./Automation-Testing/CURA-Healthcare-Automation)
+- [GreenKart Automation](./Automation-Testing/GreenKart-Automation)
+- [Travel The World Automation](./Automation-Testing/Travel-The-World-Automation)
+- [YouTube Automation](./Automation-Testing/YouTube-Automation)
 
-## 🚀 How to Navigate This Repo
-1. Open any project folder above to access the detailed test cases, execution reports, and bug logs.
-2. Excel sheets contain mapped requirements, step-by-step test cases, expected vs. actual results, and severity ratings.
+Each automation project follows a common structure:
+`src/test/java/base` • `pages` • `tests` • Maven `pom.xml` • project README
 
----
+### API Testing
+- [Postman API Testing](./API-Testing/Postman)
 
-📬 *Feel free to review the test suites and connect with me for Quality Assurance and Software Testing opportunities!*
+## 🚀 How to Run Automation
 
-📬 **Connect with me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/er-rajkori/) | [Email Me](mailto:rajrkori02@gmail.com)
+Open any automation project, verify Java/Maven are installed, then run:
+
+```bash
+mvn test
+```
+
+ChromeDriver is managed by Selenium Manager in modern Selenium versions.
+
+## 📌 Portfolio Goal
+
+The purpose of this repository is to demonstrate practical QA skills from **test design → execution → defect reporting → automation → API testing**.
+
+📬 **Connect:** [LinkedIn](https://www.linkedin.com/in/er-rajkori/) | [Email](mailto:rajrkori02@gmail.com)
