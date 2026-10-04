@@ -1,0 +1,1 @@
+package tests; import base.BaseTest; import pages.YouTubePage; import org.testng.Assert; import org.testng.annotations.Test; public class YouTubeSearchTest extends BaseTest {@Test public void searchReturnsResults(){YouTubePage p=new YouTubePage(driver);p.search("Selenium testing tutorial");Assert.assertTrue(p.resultsLoaded(),"YouTube search results were not rendered");}}
