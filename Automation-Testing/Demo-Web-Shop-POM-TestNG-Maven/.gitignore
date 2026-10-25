@@ -1,0 +1,10 @@
+target/
+test-output/
+*.class
+*.log
+.env
+.idea/
+.project
+.classpath
+.settings/
+.metadata/
