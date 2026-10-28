@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Demo Web Shop Test Automation Suite" verbose="1" parallel="classes" thread-count="4">
+    
+    <!-- Register the Extent Report Listener with the correct package path -->
     <listeners>
         <listener class-name="com.demoweb.shop.utils.ExtentTestListener"/>
     </listeners>
+
     <test name="Regression Test Suite">
         <classes>
             <class name="com.demowebshop.tests.RegistrationTest"/>
