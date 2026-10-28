@@ -29,6 +29,7 @@ Each manual project has a corresponding Java/Selenium automation project:
 - [GreenKart Cucumber + Page Object Model](./Automation-Testing/GreenKart-POM-Cucumber-Automation)
 - [Travel The World Automation](./Automation-Testing/Travel-The-World-Automation)
 - [YouTube Automation](./Automation-Testing/YouTube-Automation)
+- [DemoShop Final Course Project — Selenium + TestNG + Maven + POM](./Automation-Testing/DemoShop)
 
 The GreenKart projects show a learning progression: a basic Selenium/POM version, a beginner Cucumber BDD version with simple step definitions, and a combined Cucumber + POM version that separates page actions from BDD steps.
 
