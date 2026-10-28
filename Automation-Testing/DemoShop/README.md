@@ -2,15 +2,24 @@
 
 **Application under test:** https://demowebshop.tricentis.com/
 
-This repository contains the Demo Web Shop automation framework built during my Software Testing course. The local Eclipse project uses Java, Selenium WebDriver, TestNG, Maven, Page Object Model (POM), CSV test data, and Extent Reports.
+This project covers the manual testing and automation testing workflow for Demo Web Shop. The automation framework uses Java, Selenium WebDriver, TestNG, Maven, Page Object Model (POM), CSV test data, and Extent Reports.
 
-## Current progress
-- [x] Test scenarios prepared
-- [x] Test cases prepared
-- [ ] Execute test cases and compare expected results with actual results
-- [ ] Complete defect report from reproducible findings
-- [ ] Complete Requirements Traceability Matrix (RTM)
-- [ ] Re-run and verify the automation suite and reports
+## Project work completed
+
+### 1. Manual testing
+- [x] Test scenarios
+- [x] Test cases
+- [x] Defect report
+- [x] Requirements Traceability Matrix (RTM)
+
+### 2. Automation testing
+- [x] Automated test scripts to check application flows covered by the test cases
+- [x] TestNG suite execution
+
+### 3. Test reporting
+- [x] Generated HTML test report (`Test reports.html`)
+
+**Latest execution result shared:** 34 tests run, 34 passed, 0 failed, 0 skipped. See [Test Execution Summary](./TEST-EXECUTION-SUMMARY.md). This result reflects the console output for that run; it is not a claim that every application requirement is defect-free.
 
 ## Modules represented in the source project
 - Registration
@@ -23,25 +32,23 @@ This repository contains the Demo Web Shop automation framework built during my 
 - Checkout
 
 ## Framework components
-The supplied project ZIP includes:
 - Page objects under `src/main/java/com/demoweb/shop/pages/`
 - Shared browser setup in `BaseClass.java`
 - Utility classes for element interactions, CSV/Excel data reading, and Extent Reports
 - TestNG test classes under `src/test/java/com/demowebshop/tests/`
 - Test suite configuration in `src/test/resources/testng.xml`
-- CSV test cases in `src/test/resources/testdata/DemoWeb - Test_Cases.csv`
+- CSV test data under `src/test/resources/testdata/`
 
 ## Running locally
-Requirements: JDK compatible with the project, Maven, and Google Chrome. From the project root:
+Requirements: a compatible JDK, Maven, and Google Chrome. From the project root:
 
 ```bash
 mvn clean test
 ```
 
-The supplied `testng.xml` configures the regression suite and Extent Reports listener. Review test execution locally before treating the suite as passing.
+Review the TestNG and HTML report output after execution. Browser/CDP compatibility and logging warnings may need cleanup even when tests pass.
 
-## Backup status
-This README describes the source ZIP reviewed for the project. The source ZIP includes unrelated CURA and GreenKart classes in the same Eclipse workspace; the DemoShop project scope is the `com.demoweb.shop` and `com.demowebshop.tests` packages plus the Demo Web Shop test data. Generated `target/` and `test-output/` files are build artifacts and should not be committed as source.
+## Repository notes
+Keep source code, test data, manual testing documents, and useful HTML report artifacts organized in this project. Avoid committing generated build folders such as `target/` and temporary output folders unless they are intentionally required as evidence.
 
-## QA documentation status
-Test scenarios and test cases are complete according to my current progress. Actual-result verification, defect reporting, and RTM completion remain in progress. Defects should be recorded only after they are reproduced and supported by evidence.
+**Report upload note:** The HTML report is documented here, but the report file itself must be committed to this repository separately if it is not already present.
