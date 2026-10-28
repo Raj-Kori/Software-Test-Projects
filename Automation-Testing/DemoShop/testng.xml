@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Demo Web Shop Test Automation Suite" verbose="1" parallel="classes" thread-count="4">
+    <listeners>
+        <listener class-name="com.demoweb.shop.utils.ExtentTestListener"/>
+    </listeners>
+    <test name="Regression Test Suite">
+        <classes>
+            <class name="com.demowebshop.tests.RegistrationTest"/>
+            <class name="com.demowebshop.tests.LoginTest"/>
+            <class name="com.demowebshop.tests.ProductSearchTest"/>
+            <class name="com.demowebshop.tests.CategoryNavigationTest"/>
+            <class name="com.demowebshop.tests.CartTest"/>
+            <class name="com.demowebshop.tests.WishlistTest"/>
+            <class name="com.demowebshop.tests.CompareProductsTest"/>
+            <class name="com.demowebshop.tests.CheckoutTest"/>
+            <class name="com.demowebshop.tests.UserAccountTest"/>
+            <class name="com.demowebshop.tests.LogoutTest"/>
+        </classes>
+    </test>
+</suite>
