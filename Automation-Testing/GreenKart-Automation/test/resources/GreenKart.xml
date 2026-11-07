@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Green Kart Test Automation Suite" verbose="1" parallel="classes" thread-count="8">
+    
+    <listeners>
+        <listener class-name="greenkart.utils.ExtentTestListener"/>
+    </listeners>
+
+    <test name="Test Suite">
+        <classes>
+            <class name="greenkart.tests.GreenKart_ProductSearch_Test"/>
+            <class name="greenkart.tests.GreenKart_Cart_Test"/>
+            <class name="greenkart.tests.GreenKart_checkout_Test"/>
+            <class name="greenkart.tests.GreenKart_placeorder_Test"/>
+        </classes>
+    </test>
+</suite>
