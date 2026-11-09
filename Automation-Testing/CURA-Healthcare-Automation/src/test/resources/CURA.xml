@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CURA Test Automation Suite" verbose="1" parallel="classes" thread-count="8">
+    <listeners>
+        <listener class-name="cura.utils.ExtentTestListener"/>
+    </listeners>
+    <test name="CURA Test Suite">
+        <classes>
+            <class name="cura.test.Cura_loginTest"/>
+            <class name="cura.test.cura_appointment_test"/>
+        </classes>
+    </test>
+</suite>
