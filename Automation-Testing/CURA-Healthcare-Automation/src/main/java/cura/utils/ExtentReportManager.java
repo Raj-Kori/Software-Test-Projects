@@ -1,0 +1,26 @@
+package cura.utils;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+public class ExtentReportManager {
+    private static ExtentReports extent;
+
+    public static ExtentReports getInstance() {
+        if (extent == null) {
+            String reportPath = System.getProperty("user.dir") + "/test-output/CURA_Report.html";
+            ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
+            sparkReporter.config().setTheme(Theme.STANDARD);
+            sparkReporter.config().setDocumentTitle("CURA Automation Report");
+            sparkReporter.config().setReportName("Functional Test Execution Results");
+            sparkReporter.config().setEncoding("UTF-8");
+
+            extent = new ExtentReports();
+            extent.attachReporter(sparkReporter);
+            extent.setSystemInfo("Application", "CURA Health Care Service");
+            extent.setSystemInfo("Framework", "Selenium + TestNG + POM");
+        }
+        return extent;
+    }
+}
