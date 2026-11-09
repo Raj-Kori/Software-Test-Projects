@@ -1,21 +1,46 @@
-# CURA Healthcare — Selenium Automation
-Automated regression coverage for the CURA Healthcare Service manual-testing project.
+# CURA Healthcare — Maven + TestNG + POM Automation
 
-**AUT:** https://katalon-demo-cura.herokuapp.com/
+Automated UI testing project for the [CURA Healthcare Service demo application](https://katalon-demo-cura.herokuapp.com/).
 
-## Stack
-Java 21 • Maven • Selenium 4.49.0 • TestNG 7.12.0 • Page Object Model
+## Technology stack
+- Java 21
+- Maven
+- Selenium WebDriver 4.51.0
+- TestNG 7.12.0
+- Page Object Model (POM)
+- ExtentReports 5.1.2
 
-## Automated flow
-- Open CURA
-- Navigate to Make Appointment
-- Login with the demo credentials
-- Select facility and healthcare program
-- Enter visit date and comment
-- Book appointment
-- Assert Appointment Confirmation
+## Framework structure
+```
+CURA-Healthcare-Automation/
+├── pom.xml
+├── CURA_Report.html
+└── src/
+    ├── main/java/cura/
+    │   ├── base/       # WebDriver setup and teardown
+    │   ├── pages/      # Login and appointment page actions
+    │   └── utils/      # Reusable element methods and ExtentReports
+    └── test/
+        ├── java/cura/test/   # TestNG tests and test lifecycle
+        └── resources/CURA.xml
+```
 
-## Run
-`mvn test`
+## Current automated coverage
+- Login flow using the demo credentials
+- Appointment booking flow: facility, readmission checkbox, Medicaid program, visit date and comment
+- TestNG listener integration for pass/fail/skip reporting
+- Extent Spark HTML report generation
 
-The automation complements the existing manual test artifacts; defect observations remain documented separately in the Manual-Testing project.
+## Run locally
+Prerequisites: JDK 21, Maven, and Google Chrome.
+
+```bash
+mvn clean test
+```
+
+The TestNG suite is configured in `src/test/resources/CURA.xml`. A fresh Extent report is generated at `test-output/CURA_Report.html` after execution.
+
+## Notes
+- This repository contains the framework and test scripts supplied in the project archive, with the Maven configuration cleaned up for this TestNG/POM implementation.
+- The uploaded source includes Cucumber dependencies in its original POM, but no Cucumber feature files or step definitions. Those unused dependencies are excluded here.
+- Test execution has not been independently rerun as part of this repository update. Review assertions and test outcomes from a fresh local run before presenting execution totals.
